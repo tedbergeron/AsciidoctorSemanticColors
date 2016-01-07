@@ -1,0 +1,45 @@
+= AsciidoctorSemanticColors
+
+Demonstrates use of docinfo file
+
+see demo: http://tedbergeron.github.io/AsciidoctoSemanticColors
+
+
+== ADOC File
+
+Add the :docinfo1: attribute at the top.
+
+(see docinfo.html file in repo.)
+
+
+== docinfo.html
+
+This file contains your custom styles
+
+
+NOTE: Roles are case-sensitive. For example the style for 'primary' is lower-case in the docinfo file.
+
+[source, CSS]
+----
+.primary { color: #ba3925; }
+.primary-background { background-color: #ff8c7a; }
+----
+
+Usage of the 'danger' style in .adoc file
+
+  icon:exclamation-circle[role=danger]
+
+
+
+== Generating the index.html file
+
+At the command prompt, run Asciidoctor
+
+[source, CLI]
+----
+
+> asciidoctor index.adoc
+
+----
+
+This will generate the index.html file.

@@ -1,0 +1,105 @@
+= Semantically Named Colors
+:icons: font
+:docinfo1:
+
+
+== Primary
+
+[primary]#This is the PRIMARY.#
+
+[primary-background]#This is primary background.#
+
+
+=== [secondary]#Secondary#
+
+[secondary]#This is the SECONDARY.#
+
+[secondary-background]#This is secondary background.#
+
+
+=== [success]#Success#
+
+icon:check-circle[role=success] [success]#This is success.#
+
+[success-background]#This is SUCCESS background.#
+
+
+=== [info]#Info#
+
+icon:info-circle[role=info] [info]#This is info.#
+
+[info-background]#This is info background.#
+
+
+=== [caution]#Caution#
+
+
+icon:exclamation-triangle[role=caution] [caution]#This is caution.#
+
+[caution-background]#This is caution background.#
+
+=== [warning]#Warning#
+
+icon:exclamation-triangle[role=warning] [warning]#This is warning.#
+
+[warning-background]#This is WARNING background.#
+
+=== [danger]#Danger (aka Important)#
+
+icon:exclamation-circle[role=danger] [danger]#This is danger.#
+
+[danger-background]#This is danger background.#
+
+
+=== [highlight]#Highlight#
+
+[highlight]#This is highlight.#
+
+[highlight-background]#This is highlight background.#
+
+
+=== [alert]#Alert#
+
+icon:exclamation[role=alert] [alert]#This is alert.#
+
+[alert-background]#This is alert background.#
+
+
+== Current Colors in stylesheet
+
+icon:folder[role=aqua] Aqua
+icon:folder[role=black] Black
+icon:folder[role=blue] Blue
+icon:folder[role=fuchsia] Fuchsia
+icon:folder[role=gray] Gray
+icon:folder[role=green] Green
+icon:folder[role=lime] Lime
+icon:folder[role=maroon] Maroon
+
+
+icon:folder[role=navy] Navy
+icon:folder[role=olive] Olive
+icon:folder[role=purple] Purple
+icon:folder[role=red] Red
+icon:folder[role=silver] Silver
+icon:folder[role=teal] Teal
+icon:folder[role=white] White
+icon:folder[role=yellow] Yellow
+
+== Custom Color Added
+
+icon:folder[role=orange] Orange
+
+'''
+
+=== icon:github[] Repo
+
+See the files used to generate this page:
+
+https://github.com/tedbergeron/AsciidoctorSemanticColors
+
+=== Color Pallet Generated
+
+This color scheme based on link:http://paletton.com/#uid=5060u0kpDnlgIS3iWEhSCeIZAaP[paletton.com]
+
+Document generated with link:http://asciidoctor.org/[image:https://img.shields.io/badge/Asciidoctor-v{asciidoctor-version}-orange.svg[]]
