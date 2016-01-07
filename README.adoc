@@ -2,7 +2,7 @@
 
 Demonstrates use of docinfo file
 
-see demo: http://tedbergeron.github.io/AsciidoctoSemanticColors
+see demo: http://tedbergeron.github.io/AsciidoctorSemanticColors
 
 
 == ADOC File
