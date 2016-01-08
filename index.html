@@ -5,7 +5,7 @@
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 1.5.4">
-<title>Semantically Named Colors</title>
+<title>Asciidoctor Semantically Named Colors</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
 /* Asciidoctor default stylesheet | MIT License | http://asciidoctor.org */
@@ -431,13 +431,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
     <title>
   see http://asciidoctor.org/docs/user-manual/#docinfo-file for more info */
 
-  /* add my own color ORANGE for rolls. Usage
-        icon:folder[role=orange]
-    NOTE: case sensitive */
-  .orange { color: #ffa500; }
-  .orange-background { color: #cc9900}
 
-  /* Dan Allen's semantic color names */
+  /* Dan Allen's semantic color names
+     palette based on http://paletton.com/#uid=5060u0kpDnlgIS3iWEhSCeIZAaP */
   .primary { color: #ba3925; }
   .primary-background { background-color: #ff8c7a; }
   .secondary { color: #9c1f58; }                        /* not in bootstrap */
@@ -457,7 +453,27 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
   .alert { color: #ff0000; }                            /* not in bootstrap */
   .alert-background { background-color: #ff5b5b; }
 
+  /* Nicer Colors for the web based on http://clrs.cc/ */
+  .aqua { color: #7FDBFF; }
+  .black { color: #111111; }
+  .blue { color: #0074D9; }
+  .fuchsia { color: #F012BE; }
+  .gray { color: #AAAAAA; }
+  .green { color: #2ECC40; }
+  .lime { color: #01FF70; }
+  .maroon { color: #85144b; }
+  .navy { color: #001f3f; }
+  .olive { color: #3D9970; }
+  .orange { color: #FF851B; }
+  .purple { color: #B10DC9; }
+  .red { color: #FF4136; }
+  .silver { color: #DDDDDD; }
+  .teal { color: #39CCCC; }
+  .yellow { color: #FFDC00; }
+
+
   /* Current Colors in Asciidoctor Stylesheet */
+  /*
   .aqua { color: #00bfbf; }
   .aqua-background { background-color: #00fafa; }
   .black { color: black; }
@@ -490,11 +506,20 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
   .white-background { background-color: #fafafa; }
   .yellow { color: #bfbf00; }
   .yellow-background { background-color: #fafa00; }
+  */
+
+  /* add my own color ORANGE for roles. Usage
+        icon:folder[role=orange]
+    NOTE: case sensitive
+  .orange { color: #ffa500; } replaced by nicer color above */
+  .orange-background { background-color: #cc9900}
+
+
 </style>
 </head>
 <body class="article">
 <div id="header">
-<h1>Semantically Named Colors</h1>
+<h1>Asciidoctor Semantically Named Colors</h1>
 </div>
 <div id="content">
 <div class="sect1">
@@ -516,16 +541,16 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect2">
-<h3 id="__span_class_success_success_span"><span class="success">Success</span></h3>
+<h3 id="__span_class_success_success_could_be_used_for_tip_span"><span class="success">Success (could be used for TIP)</span></h3>
 <div class="paragraph">
 <p><span class="icon success"><i class="fa fa-check-circle"></i></span> <span class="success">This is success.</span></p>
 </div>
 <div class="paragraph">
-<p><span class="success-background">This is SUCCESS background.</span></p>
+<p><span class="icon"><i class="fa fa-lightbulb-o"></i></span> <span class="success-background">This is success background.</span></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="__span_class_info_info_span"><span class="info">Info</span></h3>
+<h3 id="__span_class_info_info_aka_note_span"><span class="info">Info (aka NOTE)</span></h3>
 <div class="paragraph">
 <p><span class="icon info"><i class="fa fa-info-circle"></i></span> <span class="info">This is info.</span></p>
 </div>
@@ -539,7 +564,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><span class="icon caution"><i class="fa fa-exclamation-triangle"></i></span> <span class="caution">This is caution.</span></p>
 </div>
 <div class="paragraph">
-<p><span class="caution-background">This is caution background.</span></p>
+<p><span class="icon caution"><i class="fa fa-fire"></i></span> <span class="caution-background">This is caution background.</span></p>
 </div>
 </div>
 <div class="sect2">
@@ -548,11 +573,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p><span class="icon warning"><i class="fa fa-exclamation-triangle"></i></span> <span class="warning">This is warning.</span></p>
 </div>
 <div class="paragraph">
-<p><span class="warning-background">This is WARNING background.</span></p>
+<p><span class="warning-background">This is warning background.</span></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="__span_class_danger_danger_aka_important_span"><span class="danger">Danger (aka Important)</span></h3>
+<h3 id="__span_class_danger_danger_aka_important_span"><span class="danger">Danger (aka IMPORTANT)</span></h3>
 <div class="paragraph">
 <p><span class="icon danger"><i class="fa fa-exclamation-circle"></i></span> <span class="danger">This is danger.</span></p>
 </div>
@@ -581,8 +606,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="sect1">
-<h2 id="_current_colors_in_stylesheet">Current Colors in stylesheet</h2>
+<h2 id="_nicer_color_palette">Nicer Color Palette</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>Here are the nicer colors for the web</p>
+</div>
 <div class="paragraph">
 <p><span class="icon aqua"><i class="fa fa-folder"></i></span> Aqua
 <span class="icon black"><i class="fa fa-folder"></i></span> Black
@@ -596,12 +624,28 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="paragraph">
 <p><span class="icon navy"><i class="fa fa-folder"></i></span> Navy
 <span class="icon olive"><i class="fa fa-folder"></i></span> Olive
+<span class="icon orange"><i class="fa fa-folder"></i></span> Orange
 <span class="icon purple"><i class="fa fa-folder"></i></span> Purple
 <span class="icon red"><i class="fa fa-folder"></i></span> Red
 <span class="icon silver"><i class="fa fa-folder"></i></span> Silver
 <span class="icon teal"><i class="fa fa-folder"></i></span> Teal
-<span class="icon white"><i class="fa fa-folder"></i></span> White
 <span class="icon yellow"><i class="fa fa-folder"></i></span> Yellow</p>
+</div>
+<div class="paragraph">
+<p>Source of the nicer color palette for the web:  <a href="http://clrs.cc/" class="bare">http://clrs.cc/</a></p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_current_colors">Current Colors</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Current colors in the asciidoctor.css style sheet have been over-ridden by the styles in the docinfo file.
+See above nicer color palette.
+The only default, current color left out is 'white'.</p>
+</div>
+<div class="paragraph">
+<p><span class="icon white"><i class="fa fa-folder"></i></span> White</p>
 </div>
 </div>
 </div>
@@ -609,7 +653,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_custom_color_added">Custom Color Added</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><span class="icon orange"><i class="fa fa-folder"></i></span> Orange</p>
+<p><span class="orange-background">Orange background</span></p>
 </div>
 <hr>
 <div class="sect2">
@@ -635,7 +679,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-01-07 15:42:10 Pacific Standard Time
+Last updated 2016-01-07 20:11:24 Pacific Standard Time
 </div>
 </div>
 </body>

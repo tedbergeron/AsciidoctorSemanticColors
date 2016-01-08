@@ -12,13 +12,9 @@
     <title>
   see http://asciidoctor.org/docs/user-manual/#docinfo-file for more info */
 
-  /* add my own color ORANGE for rolls. Usage
-        icon:folder[role=orange]
-    NOTE: case sensitive */
-  .orange { color: #ffa500; }
-  .orange-background { color: #cc9900}
 
-  /* Dan Allen's semantic color names */
+  /* Dan Allen's semantic color names
+     palette based on http://paletton.com/#uid=5060u0kpDnlgIS3iWEhSCeIZAaP */
   .primary { color: #ba3925; }
   .primary-background { background-color: #ff8c7a; }
   .secondary { color: #9c1f58; }                        /* not in bootstrap */
@@ -38,7 +34,27 @@
   .alert { color: #ff0000; }                            /* not in bootstrap */
   .alert-background { background-color: #ff5b5b; }
 
+  /* Nicer Colors for the web based on http://clrs.cc/ */
+  .aqua { color: #7FDBFF; }
+  .black { color: #111111; }
+  .blue { color: #0074D9; }
+  .fuchsia { color: #F012BE; }
+  .gray { color: #AAAAAA; }
+  .green { color: #2ECC40; }
+  .lime { color: #01FF70; }
+  .maroon { color: #85144b; }
+  .navy { color: #001f3f; }
+  .olive { color: #3D9970; }
+  .orange { color: #FF851B; }
+  .purple { color: #B10DC9; }
+  .red { color: #FF4136; }
+  .silver { color: #DDDDDD; }
+  .teal { color: #39CCCC; }
+  .yellow { color: #FFDC00; }
+
+
   /* Current Colors in Asciidoctor Stylesheet */
+  /*
   .aqua { color: #00bfbf; }
   .aqua-background { background-color: #00fafa; }
   .black { color: black; }
@@ -71,4 +87,13 @@
   .white-background { background-color: #fafafa; }
   .yellow { color: #bfbf00; }
   .yellow-background { background-color: #fafa00; }
+  */
+
+  /* add my own color ORANGE for roles. Usage
+        icon:folder[role=orange]
+    NOTE: case sensitive
+  .orange { color: #ffa500; } replaced by nicer color above */
+  .orange-background { background-color: #cc9900}
+
+
 </style>

@@ -1,4 +1,4 @@
-= Semantically Named Colors
+= Asciidoctor Semantically Named Colors
 :icons: font
 :docinfo1:
 
@@ -17,14 +17,14 @@
 [secondary-background]#This is secondary background.#
 
 
-=== [success]#Success#
+=== [success]#Success (could be used for TIP)#
 
 icon:check-circle[role=success] [success]#This is success.#
 
-[success-background]#This is SUCCESS background.#
+icon:lightbulb-o[] [success-background]#This is success background.#
 
 
-=== [info]#Info#
+=== [info]#Info (aka NOTE)#
 
 icon:info-circle[role=info] [info]#This is info.#
 
@@ -36,15 +36,15 @@ icon:info-circle[role=info] [info]#This is info.#
 
 icon:exclamation-triangle[role=caution] [caution]#This is caution.#
 
-[caution-background]#This is caution background.#
+icon:fire[role=caution] [caution-background]#This is caution background.#
 
 === [warning]#Warning#
 
 icon:exclamation-triangle[role=warning] [warning]#This is warning.#
 
-[warning-background]#This is WARNING background.#
+[warning-background]#This is warning background.#
 
-=== [danger]#Danger (aka Important)#
+=== [danger]#Danger (aka IMPORTANT)#
 
 icon:exclamation-circle[role=danger] [danger]#This is danger.#
 
@@ -65,7 +65,9 @@ icon:exclamation[role=alert] [alert]#This is alert.#
 [alert-background]#This is alert background.#
 
 
-== Current Colors in stylesheet
+== Nicer Color Palette
+
+Here are the nicer colors for the web
 
 icon:folder[role=aqua] Aqua
 icon:folder[role=black] Black
@@ -79,16 +81,28 @@ icon:folder[role=maroon] Maroon
 
 icon:folder[role=navy] Navy
 icon:folder[role=olive] Olive
+icon:folder[role=orange] Orange
 icon:folder[role=purple] Purple
 icon:folder[role=red] Red
 icon:folder[role=silver] Silver
 icon:folder[role=teal] Teal
-icon:folder[role=white] White
 icon:folder[role=yellow] Yellow
+
+
+
+Source of the nicer color palette for the web:  http://clrs.cc/
+
+== Current Colors
+
+Current colors in the asciidoctor.css style sheet have been over-ridden by the styles in the docinfo file.
+See above nicer color palette.
+The only default, current color left out is 'white'.
+
+icon:folder[role=white] White
 
 == Custom Color Added
 
-icon:folder[role=orange] Orange
+[orange-background]#Orange background#
 
 '''
 
