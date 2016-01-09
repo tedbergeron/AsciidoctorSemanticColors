@@ -112,7 +112,7 @@ See the files used to generate this page:
 
 https://github.com/tedbergeron/AsciidoctorSemanticColors
 
-=== Color Pallet Generated
+=== Color Palette Generated
 
 This color scheme based on link:http://paletton.com/#uid=5060u0kpDnlgIS3iWEhSCeIZAaP[paletton.com]
 
